@@ -30,3 +30,23 @@ python -m rasa_core_sdk.endpoint --actions action_name
 ```
 python -m rasa_core.run -d models/dialogue -u models/current/nlu --endpoints endpoints.yml
 ```
+
+目录结构解释：
+
+data : 保存的nlu 和stories 数据
+modles :生成的模型保存的位置 ，里面的文件是自动生成的。
+train_core 使用python 代码的方式进行core 模块的训练 和实际在命令行指定一样的效果
+train_nlu  使用python 代码的方式进行nlu 模块的训练   和实际使用脚本的效果一样 
+
+
+
+
+todo 1 搞明白配置的几个参数的意义。
+todo 2 把fb 的结构移动过去。
+
+todo 3 把nlu 内部的keras 模型结构核对下。
+
+
+
+
+2019-9-3 :19:03 nlu 测试通过 
