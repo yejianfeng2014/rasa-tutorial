@@ -2,6 +2,8 @@ from rasa_core_sdk import Action
 from rasa_core_sdk.events import SlotSet
 
 
+#自定义的action 必须继承Action 并且重写run 方法
+
 class ActionAskWeather(Action):
     def name(self):
         return 'action_ask_weather'

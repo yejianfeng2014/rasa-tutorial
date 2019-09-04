@@ -2,9 +2,12 @@
 #训练rasa_core 包 ，然后指定了domain.yml stories 模型保存位置和使用测策略
 python -m rasa_core.train -d domain.yml -s stories.md -o models/dialogue -c policy_config.yml
 
+# 训练nlu
 python -m rasa_nlu.train -c nlu_config.yml --data nlu.md -o models --fixed_model_name nlu --project current --verbose
 
+# 测试启动某一个action
 python -m rasa_core_sdk.endpoint --actions action
 
+# 启动一个完整的对话 包含 nlu  对话， 发布点
 python -m rasa_core.run -d models/dialogue -u models/current/nlu --endpoints endpoints.yml
 
