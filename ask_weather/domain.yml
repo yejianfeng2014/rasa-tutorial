@@ -1,9 +1,6 @@
 intents:
   - greet
-  - mood_happy
-  - mood_unhappy
-  - ask_weather
-  - weather_state
+  -
 
 entities:
   - city

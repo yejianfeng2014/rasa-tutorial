@@ -1,20 +1,28 @@
-## story_happy
+## story_1_ask_website
 * greet
-  - utter_greet
-* mood_happy
-  - utter_happy
+    - utter_ask_howcanhelp
+* ask_website
+    - utter_reply_website
+* thank
+    - utter_ending 
+    
+## story_2_order_number&status
+* greet
+    - utter_ask_howcanhelp
+* item not received
+    - utter_ask_order number     
+* input_order number    
+    - utter_reply_order staus
+* thank
+    - utter_ending
+    
+    
+        
 
-## story_unhappy
-* greet
-  - utter_greet
-* mood_unhappy
-  - utter_unhappy
-  
-## story_ask_weather
-* ask_weather
-  - action_ask_weather
-* weather_city
-  - utter_weather_good
+           
+    
+    
+              
   
 
   

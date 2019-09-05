@@ -7,3 +7,4 @@
 
 存在的bug 1,不能重复运行一个对话
 
+python -m rasa_core.train -d domain.yml -s data/stories.md -o models/dialogue
