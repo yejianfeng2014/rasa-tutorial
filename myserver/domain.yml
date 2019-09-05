@@ -1,0 +1,40 @@
+intents:
+  - greet
+  - ask_website
+  - thank
+  - item_not_received
+  - input_order_number
+
+
+actions:
+  - utter_ask_howcanhelp
+  - utter_reply_website
+  - utter_ask_order_number
+  - utter_ending
+
+
+templates:
+  utter_ask_howcanhelp:
+    - text: "Thanks for your message, what can I do for you?"
+
+  utter_reply_website:
+    - text: "B: We are berrylook, if you like our products, please make an order by visiting our website https://www.berrylook.com/"
+
+  utter_ask_order_number:
+    - text: "B:We are so sorry to to hear that,could you please tell me your order number so that I can check the status for you? Thank you so much~"
+
+  utter_reply_order_staus:
+    - text: "B:order staus..............."
+
+  utter_ending:
+    - text: "You are welcome, have a nice day~"
+    - text: "You are welcome"
+
+
+
+
+
+
+
+
+
