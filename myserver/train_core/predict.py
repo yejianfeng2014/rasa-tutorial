@@ -7,9 +7,10 @@ from rasa.core.agent import Agent
 
 logger = logging.getLogger(__name__)
 
+model_path = "/usr/local/python3/rasa-tutorial/myserver/models/core-20190905-144528.tar.gz"
 
+agent = Agent.load(model_path)
 async def parse(text: Text, model_path: Text):
-    agent = Agent.load(model_path)
 
 
 
@@ -30,7 +31,7 @@ if __name__ == "__main__":
 
     text = "/greet"
     text2 = "/ask_website"
-    model_path = "/usr/local/python3/rasa-tutorial/myserver/models/core-20190905-144528.tar.gz"
+   
     loop.run_until_complete(parse(text, model_path))
 
     loop.run_until_complete(parse(text2, model_path))
