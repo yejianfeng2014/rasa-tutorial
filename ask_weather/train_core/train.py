@@ -40,7 +40,7 @@ def train_core(
             RestaurantPolicy(batch_size=100, epochs=100, validation_split=0.2),
         ],
     )
-
+    # augmentation_factor 扩展系数 10
     training_data =  agent.load_data(training_data_file, augmentation_factor=10)
     agent.train(training_data)
 
