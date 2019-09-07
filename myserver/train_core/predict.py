@@ -31,10 +31,16 @@ if __name__ == "__main__":
 
     text = "/greet"
     text2 = "/ask_website"
-   
+    text3 = "/thank"
+
+
     loop.run_until_complete(parse(text, model_path))
 
     loop.run_until_complete(parse(text2, model_path))
+    loop.run_until_complete(parse(text3, model_path))
+
+
+# 使用同一个 agent 就可以聊下去了。
 
 
 
