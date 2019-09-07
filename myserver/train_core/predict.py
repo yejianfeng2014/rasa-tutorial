@@ -11,7 +11,9 @@ logger = logging.getLogger(__name__)
 async def parse(text: Text, model_path: Text):
     agent = Agent.load(model_path)
 
-    response = await agent.handle_text(text)
+
+
+    response = await agent.handle_text(text,sender_id="123")
 
     logger.info("Text: '{}'".format(text))
     logger.info("Response:")
@@ -27,5 +29,13 @@ if __name__ == "__main__":
     loop = asyncio.get_event_loop()
 
     text = "/greet"
-    model_path = "/usr/local/myspcace/rasa/examples/restaurantbot/models/20190905-134349.tar.gz"
+    text2 = "/ask_website"
+    model_path = "/usr/local/python3/rasa-tutorial/myserver/models/core-20190905-144528.tar.gz"
     loop.run_until_complete(parse(text, model_path))
+
+    loop.run_until_complete(parse(text2, model_path))
+
+
+
+
+
