@@ -1,4 +1,3 @@
-import argparse
 import asyncio
 import logging
 from typing import Text
@@ -27,7 +26,6 @@ if __name__ == "__main__":
 
     loop = asyncio.get_event_loop()
 
-
-    text = "my test"
-    model_path = ""
+    text = "/greet"
+    model_path = "/usr/local/myspcace/rasa/examples/restaurantbot/models/20190905-134349.tar.gz"
     loop.run_until_complete(parse(text, model_path))
