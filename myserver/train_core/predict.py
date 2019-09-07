@@ -37,7 +37,9 @@ if __name__ == "__main__":
     loop.run_until_complete(parse(text, send_id))
     loop.run_until_complete(parse(text2, send_id))
     loop.run_until_complete(parse(text3, send_id))
-    
+
+
+
     print("第二个发送者")
     loop.run_until_complete(parse(text, send_id2))
     loop.run_until_complete(parse(text2, send_id2))
@@ -45,3 +47,6 @@ if __name__ == "__main__":
 
 
 # 使用同一个 agent 就可以聊下去了。
+# 不同的发送者的id 互相是不冲突的
+
+# todo 添加自定义的参数获取过程
