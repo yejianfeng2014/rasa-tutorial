@@ -15,9 +15,11 @@ agent = Agent.load(model_path)
 async def parse(text: Text, send_id: Text):
     response = await agent.handle_text(text, sender_id=send_id)
 
+
     logger.info("Text: '{}'".format(text))
     logger.info("Response:")
     logger.info(response)
+
 
     return response
 

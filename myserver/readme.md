@@ -15,7 +15,6 @@ rasa interactive \
   --endpoints endpoints.yml
   
   
-
   
 
 
@@ -49,4 +48,7 @@ For more information about the individual commands, please check out our documen
 
 Encountered any issues?
 Let us know about it by posting on Rasa Community Forum!  
+
+
+# todo 在线上需要创建新的聊天环境 
 

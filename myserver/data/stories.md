@@ -17,6 +17,29 @@
     - utter_ending
     
     
+## story_3_size consultation
+* greet
+    - utter_ask_howcanhelp     
+* ask_size
+    - reply_size consultation
+* ask_return policy
+    - reply_return policy
+* thank
+    - utter_ending 
+# story_4_return_refund
+
+* item not as described
+    -Ask_return details
+* reply_return details
+    - reply_return package status
+* ask_refund
+    - reply_refund
+* thank
+    - ending                       
+    
+         
+    
+    
         
 
            

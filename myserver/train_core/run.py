@@ -104,6 +104,7 @@ if __name__ == "__main__":
 
     loop = asyncio.get_event_loop()
 
+
     # decide what to do based on first parameter of the script
     if args.subparser_name == "train":
         if args.model == "nlu":
