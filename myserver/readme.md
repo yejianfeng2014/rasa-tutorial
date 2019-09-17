@@ -1,5 +1,9 @@
-# 服务器使用的版本是 rasa 版本 1.2.7  和以前的命令不一致 需要注意下
 
+
+# 服务器使用的版本是 rasa 版本 1.2.7  和以前的命令不一致 需要注意下
+测试环境的存储路径： /usr/local/python3/rasa-tutorial
+
+可以直接进入mysever 目录直接执行 ，
 rasa train 训练模型，生成的是一个压缩包
 
 rasa shell 启动测试环境命令行，然后就可以进行简单的测试
@@ -9,7 +13,7 @@ rasa shell 启动测试环境命令行，然后就可以进行简单的测试
 rasa run actions --actions actions&
 
 
-# 实时测试效果 ，启动后可以看到所有的story 的图形 ，非常直观
+# 实时测试效果 ，启动后可以看到所有的story 的图形 ，非常直观，最终还可以修改流程图
 rasa interactive \
   -m models/20190515-135859.tar.gz \
   --endpoints endpoints.yml
@@ -27,7 +31,7 @@ domain.yml contains the domain of the assistant
 endpoints.yml contains the webhook configuration for the custom actions
 How to use this example?
 To train a model, run
-
+# 训练模型 
 rasa train core -d domain.yml -s data/stories.md --out models -c config.yml
 To create new training data using interactive learning, execute
 
@@ -51,5 +55,7 @@ Let us know about it by posting on Rasa Community Forum!
 
 
 # todo 在线上需要创建新的聊天环境 
-dada
+
+
+从数据库导出的数据然后生成nlu 的数据，训练时候发现有一个意图的存在，发出了警告，需要处理一下。
 

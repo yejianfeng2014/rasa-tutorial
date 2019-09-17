@@ -4,7 +4,7 @@
 
 
 import flask
-from flask import Flask, render_template
+from flask import Flask
 import logging
 
 from myserver.train_nlu.predict import get_intent_v1
@@ -30,18 +30,10 @@ def predict_similar_v2():
 
         sentence_1 = params.get("msg", type=str).lower()
 
-        # print('a',sentence_1)
-        # print('b',sentence_2)
-
-        # simliar = getSimliar_v2(sentence_1, sentence_2)
-
         result = get_intent_v1(sentence_1)
 
         logging.info(result)
 
-        # print(params)
-
-        # data["prediction"] = str(model.predict(x)[0][0])
         data["success"] = True
         data['predict'] = result
 
