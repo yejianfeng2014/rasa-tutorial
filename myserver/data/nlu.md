@@ -42,9 +42,6 @@
 - we are hungry for fashionable and elegant fashion like yours.
 - I think we could be a great fit for your boutique
 
-## intent: Return_exchange_policy
-- Return_exchange_policy
-
 ## intent: Currency
 - The price is in dollar?
 - Do you accept AUD?
@@ -96,9 +93,6 @@
 - hopefully for develop a business relation with your company your brand
 - If you are interested we can send you our look books and more information
 - Do you need any suppliers?
-
-## intent: Purchase_guide
-- Purchase guide
 
 ## intent: item_not_received
 - I ordered a white Sandals that was advertised on Facebook in June and that product was never received
@@ -279,12 +273,6 @@
 - Can you send the picture of the back of this item
 - can you offer the real picture , then i can decide if i will buy
 
-## intent: unsolved
-- unsolved
-
-## intent: Logistics
-- Logistics
-
 ## intent: Refund_policy
 - If I don't like it when it will arrive? Can i return it and get my money back
 - How long will it take to get my refund back
@@ -333,21 +321,12 @@
 - I still can't finish the payment with my credit card
 - I can't pay it successfully by using the credit card
 
-## intent: URL
-- website
-- website URL
-- URL
-
-## intent: tips_18
-- 十八小时未回复用户触发此意图
 
 ## intent: Who_will_pay_taxes
 - Who will pay taxes
 - Is it including the tax
 - Hey, can you tell me if I have to pay customs
 
-## intent: Logistics_progress
-- Logistics progress
 
 ## intent: Change_shipping_address
 - can you ship to my new address
@@ -372,8 +351,6 @@
 - Do you support COD?
 - Do you support cash on delivery?
 
-## intent: self_service
-- self service
 
 ## intent: Supplier
 - Hi,do you have dropshipping service?
